@@ -4,11 +4,11 @@ function clicked(e: number) {
 
 }
 function calculate() {
-    var inputValue: any = document.getElementById("display");
+    let inputValue: any = document.getElementById("display");
     console.log(inputValue.value);
     inputValue.value = eval(inputValue.value);
 }
 function clearAll() {
-    var inputValue: any = document.getElementById("display");
+    let inputValue: any = document.getElementById("display");
     inputValue.value = "";
 }
