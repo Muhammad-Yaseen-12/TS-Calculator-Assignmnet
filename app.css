@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   user-select: 0;
   box-sizing: border-box;
+  font-family: poppins;
 }
 
 html,
@@ -14,20 +16,33 @@ body {
 body {
   display: grid;
   place-items: center;
+  background-color: black;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+ color: #FF9F0A;
+ font-family: "Pacifico", serif;
+ font-weight: 400;
 }
 .calculator {
-  width: 330px;
+  width: 355px;
   background: #dde1e7;
-  padding: 40px 30px;
-  border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+  background-color: transparent;
+  padding: 40px 20px;
+  border-radius: 30px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0px 0px 3px white;
 }
 form .result {
-  height: 60px;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: inset -3px -3px 7px #ffffff73,
-    inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+  height: 55px;
+  width: 102%;
+  border-radius: 25px;
+ border: 1px solid rgb(247, 70, 6);
+ border: 1px solid grey;
+ margin-right: 5px;
 }
 
 .result input {
@@ -36,12 +51,12 @@ form .result {
   background: none;
   border: none;
   outline: none;
-  font-size: 30px;
+  font-size: 25px;
   padding: 0 20px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   text-align: right;
-  color: #595959;
+  color: whitesmoke;
   pointer-events: none;
 }
 
@@ -54,18 +69,44 @@ form .buttons {
   height: 56px;
   width: 56px;
   font-size: 23px;
-  margin: 4px;
+  margin: 10px 9px;
   border: none;
   outline: none;
-  background: #dde1e7;
-  border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
-  color: #595959;
+  /* background: #dde1e7; */
+  border-radius: 30px;
+  /* box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288); */
+  /* box-shadow: -1px -1px 3px #ffffff73 1px 1px 3px rgba(94, 104, 121, 0.288); */
+
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(231, 228, 228);
 }
 
-.buttons input[type="button"]:focus {
-  box-shadow: inset -3px -3px 7px #ffffff73,
-    inset 2px 2px 5px rgba(94, 104, 121, 0.288);
-  color: #3498db;
+.buttons input[type="button"]:focus{
+  /* box-shadow: -1px -1px 3px rgb(4, 90, 248), 1px 1px 3px rgb(3, 94, 252); */
+  box-shadow: -1px -1px 3px grey, 1px 1px 3px rgb(88, 88, 88);
+  color: whitesmoke;
+  /* border-color: cornflowerblue; */
   transform: scale(0.9);
+}
+#lastBtn{
+  width: 75%;
+  margin-top: 10px;
+ padding-left: 2px;
+}
+#lastBtn button:focus{
+  border: 1px solid coral !important;
+  box-shadow: -1px -1px 3px rgb(4, 90, 248), 1px 1px 3px rgb(195, 204, 220);
+}
+.Soperator{
+  background-color: #FF9F0A !important;
+  border: none !important;
+  font-size: 35px;
+  font-weight: 700;
+  align-content: center;
+  box-shadow: none !important;
+}
+
+.Error{
+  color: rgb(197, 142, 3) !important;
 }
