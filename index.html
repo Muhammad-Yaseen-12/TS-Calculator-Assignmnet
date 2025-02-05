@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
+    <h1>Simple Calculator ...</h1>
     <div class="calculator">
       <form action="#" name="form">
         <div class="result">
@@ -18,27 +19,27 @@
             <input type="button" value="7" onclick="clicked('7')" />
             <input type="button" value="8" onclick="clicked('8')" />
             <input type="button" value="9" onclick="clicked('9')" />
-            <input type="button" value="+" onclick="clicked('+')" />
+            <input type="button" class="Soperator" value="+" onclick="clicked('+')" />
           </div>
           <div class="row">
             <input type="button" value="4" onclick="clicked('4')" />
             <input type="button" value="5" onclick="clicked('5')" />
             <input type="button" value="6" onclick="clicked('6')" />
-            <input type="button" value="-" onclick="clicked('-')" />
+            <input type="button" class="Soperator" value="-" onclick="clicked('-')" />
           </div>
           <div class="row">
             <input type="button" value="1" onclick="clicked('1')" />
             <input type="button" value="2" onclick="clicked('2')" />
             <input type="button" value="3" onclick="clicked('3')" />
-            <input type="button" value="*" onclick="clicked('*')" />
+            <input type="button" class="Soperator" value="*" onclick="clicked('*')" />
           </div>
           <div class="row">
             <input type="button" value="0" onclick="clicked('0')" />
             <input type="button" value="." onclick="clicked('.')" />
-            <input type="button" value="=" onclick="calculate()" />
-            <input type="button" value="÷" onclick="clicked('/')" />
+            <input type="button" class="Soperator" value="=" onclick="calculate()" />
+            <input type="button" class="Soperator" value="/" onclick="clicked('/')" />
           </div>
-          <div class="row">
+          <div class="row" id="lastBtn">
             <input type="button" value="AC" onclick="clearAll()" style="width: 100%;" />
             <!-- <input type="button" value="Clear Last" onclick="clearLastOne()" style="width: 100%;" /> -->
           </div>
